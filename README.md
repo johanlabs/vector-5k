@@ -1,8 +1,3 @@
-Perfeito! Aqui está uma versão completa do README em **Markdown**, já incluindo o **Benchmark Specs** que você forneceu, traduzido para inglês e estruturado de forma profissional:
-
-````markdown
-# 🚀 Vector-K v0.2.0: The Edge Vector Engine
-
 **Vector-K** is a high-performance, dual-core hardware accelerator for vector similarity search, designed for next-generation on-device AI.
 
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
