@@ -1,13 +1,13 @@
-**Vector-K** is a high-performance, dual-core hardware accelerator for vector similarity search, designed for next-generation on-device AI.
+  **VS4x400** is a high-performance, dual-core hardware accelerator for vector similarity search, designed for next-generation on-device AI.
 
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
-[![Version](https://img.shields.io/badge/version-0.2.0-green.svg)](https://github.com/your-repo/vector-k)
+[![Version](https://img.shields.io/badge/version-0.2.0-green.svg)](https://github.com/johanlabs/vs4x400)
 
 ---
 
 ## 🔹 Overview
 
-Vector-K enables ultra-fast similarity search for embeddings on edge devices. Its architecture allows low-latency vector computations while maintaining high energy efficiency. Ideal for embedding-based search, recommendation systems, and real-time AI applications.
+VS4x400 enables ultra-fast similarity search for embeddings on edge devices. Its architecture allows low-latency vector computations while maintaining high energy efficiency. Ideal for embedding-based search, recommendation systems, and real-time AI applications.
 
 ---
 
@@ -40,8 +40,8 @@ We evaluated the **VS4x400** dual-core vector accelerator using different databa
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-repo/vector-k.git
-cd vector-k
+git clone https://github.com/johanlabs/vs4x400.git
+cd vs4x400
 
 # Install dependencies
 yarn install
@@ -79,9 +79,9 @@ Config: N=1024, D=128
 ### Python API
 
 ```python
-from vs4x400 import VectorK
+from vs4x400 import VectorR
 
-engine = VectorK()
+engine = VectorR()
 embeddings = engine.load_embeddings("data/embeddings.npy")
 results = engine.query(embeddings, query_vector)
 ```
@@ -91,7 +91,7 @@ results = engine.query(embeddings, query_vector)
 ```cpp
 #include "vs4x400.hpp"
 
-VectorK engine;
+VectorR engine;
 engine.load_embeddings("data/embeddings.bin");
 auto results = engine.query(query_vector);
 ```
